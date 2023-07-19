@@ -1,0 +1,173 @@
+<style>
+    .depoimentos-carrossel{
+        height: 500px;
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        background-color: #F7F5E8;
+    }
+
+    .depoimentos-carrossel .depoimentos-content{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depoimentos-carrossel .dp-avatar img{
+        height: 120px;
+        width: 120px;
+        border-radius: 999px;
+        margin-bottom: 25px;
+    }
+
+    .depoimentos-carrossel .dp-title strong{
+        font-size: 15px;
+        line-height: 1.5rem;;
+    }
+
+    .depoimentos-carrossel .dp-title{
+        margin-bottom: 25px;
+    }
+
+    .depoimentos-carrossel .dp-description{
+        padding: 0px 10px;
+        font-size: 13px;
+    }
+
+
+    .depoimentos-carrossel .swiper-button-next{
+        color: #AE5538;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 60vh;
+        border: 1px solid #AE5538;
+        border-radius: 999px;
+        padding: 30px;
+        scale: 0.6;
+    }
+
+    .depoimentos-carrossel .swiper-button-prev{
+        color: #AE5538;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 60vh;
+        border: 1px solid #AE5538;
+        border-radius: 999px;
+        padding: 30px;
+        scale: 0.6;
+    }
+
+    .depoimentos-carrossel .swiper-pagination{
+        position: absolute;
+        top: 63vh !important;
+    }
+
+
+</style>
+
+
+<div class="depoimentos-carrossel swiper">
+    <div class="swiper-wrapper">
+        <div class="depoimentost swiper-slide">
+            <div class="depoimentos-content">
+                
+
+                <div class="dp-avatar">
+                    <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3261558:1659119891/Maltes.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=878c96e" alt="">
+                </div>
+
+                <div class="dp-title">
+                    <strong>
+                        Nome da Pessoa 01
+                    </strong>
+                </div>
+
+                <div class="dp-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Tempora, quidem. Delectus magnam eos neque itaque illum 
+                    iure voluptatibus sint praesentium quaerat nulla! Quos ea 
+                    ipsam libero. Incidunt asperiores ipsum officiis?
+                </div>
+
+              
+            </div>
+        </div>
+
+        <div class="depoimentost swiper-slide">
+            <div class="depoimentos-content">
+                
+
+                <div class="dp-avatar">
+                    <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3261558:1659119891/Maltes.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=878c96e" alt="">
+                </div>
+
+                <div class="dp-title">
+                    <strong>
+                        Nome da Pessoa 02
+                    </strong>
+                </div>
+
+                <div class="dp-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Tempora, quidem. Delectus magnam eos neque itaque illum 
+                    iure voluptatibus sint praesentium quaerat nulla! Quos ea 
+                    ipsam libero. Incidunt asperiores ipsum officiis?
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="depoimentost swiper-slide">
+            <div class="depoimentos-content">
+               
+
+                <div class="dp-avatar">
+                    <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3261558:1659119891/Maltes.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=878c96e" alt="">
+                </div>
+
+                <div class="dp-title">
+                    <strong>
+                        Nome da Pessoa 03
+                    </strong>
+                </div>
+
+                <div class="dp-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Tempora, quidem. Delectus magnam eos neque itaque illum 
+                    iure voluptatibus sint praesentium quaerat nulla! Quos ea 
+                    ipsam libero. Incidunt asperiores ipsum officiis?
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+   new Swiper(".depoimentos-carrossel", {
+        spaceBetween: 22,
+        slidePerVier: "auto",
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination:{
+            el:'.swiper-pagination',
+        }
+     });
+</script>
