@@ -1,0 +1,135 @@
+<style>
+    .container-wpp{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .tabs{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    
+    .tab.active-tab{
+        font-weight: 600;
+    }
+    
+
+    .tab{
+      display: inline-block;
+
+      border-bottom: 1px solid transparent;
+      padding-bottom: 5px;
+    }
+
+    
+    .tab-content{
+      display: none;
+      padding: 0px 10px;
+    }
+    
+    .tab-content h2{
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+    
+     .tab-content p{
+        font-size: 13px;
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+    
+    .tab-content strong{
+        font-size: 14px;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+    
+
+    .active-tab{
+      border-bottom: 1px solid #1F1F1F;
+    }
+   
+</style>
+
+<div class="container-wpp">
+<div class="tabs">
+    <div class="tab" onclick="openTab('tab1')">Whatsapp Business</div>
+    <div class="tab" onclick="openTab('tab2')">Recurso do Business</div>
+</div>
+
+<div class="tab-content" id="tab1">
+    
+    <h2>Quais as vantagens do curso de <br>WhatsApp Business?</h2>
+    
+    <p>Você vai aprender de forma prática e definitiva a utilizar essa 
+        ferramenta poderosa. Com o curso para WhatsApp Empresarial você 
+        poderá implementar as melhores estratégias de marketing e vendas 
+        para impulsionar seus negócios e aumentar o faturamento.
+    </p>
+    
+    <strong>
+        Seu cliente está no centro da sua estratégia?
+    </strong>
+    
+  </div>
+
+  <div class="tab-content" id="tab2">
+      
+    <h2>Recursos do WhatsApp Empresarial</h2>
+    
+    <p>No curso você aprenderá as noções básicas de segurança e o 
+        passo a passo para configurar seu WhatsApp Comercial tanto 
+        para Android quanto para iPhone (IOS).
+    </p>
+    
+    <p>
+        Além disso, vai descobrir qual a melhor forma de apresentar 
+        o perfil da empresa para mostrar as informações mais importantes, 
+        como endereço, e-mail e site.  
+    </p>
+    
+    <p>
+        Com o WhatsApp Business você também pode avaliar diversos dados. 
+        Mas a informação só é válida se você souber como utilizá-la, não 
+        é mesmo? Por isso, o curso também ensina a ver as estatísticas de 
+        quantas mensagens foram enviadas, entregues e lidas com sucesso.
+    </p>
+    
+    <strong>
+        Dê o impulso que seu negócio precisa com o curso de Whatsapp Empresarial
+    </strong>
+    
+</div>
+</div>
+
+<script>
+
+
+    function openTab(tabId) {
+
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(content => content.style.display = 'none');
+
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => tab.classList.remove('active-tab'));
+
+      const selectedTabContent = document.getElementById(tabId);
+      selectedTabContent.style.display = 'block';
+
+      const selectedTab = document.querySelector(`[onclick="openTab('${tabId}')"]`);
+      selectedTab.classList.add('active-tab');
+    }
+
+
+    openTab('tab1');
+</script>

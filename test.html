@@ -1,0 +1,253 @@
+<style>
+    .pet-friendly-carrousel-container {
+      width: 100%;
+      height: 40vh;
+  
+      display: flex;
+      gap: 5%;
+      align-items: center;
+      justify-content: center;
+      max-height: 80vh;
+    }
+  
+    .pet-friendly-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+      height: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+  
+      padding-right: 5%;
+      border-right: 3px solid #5813001a;
+  
+      min-width: 25vw;
+    }
+  
+    .pet-friendly-menu button {
+      width: 64px;
+      height: 64px;
+  
+      border-radius: 999px;
+      border: 3px solid #5813001a;
+  
+      color: #5813001a;
+      fill: #5813001a;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      outline: none;
+      background: transparent;
+      padding: 0;
+    }
+  
+    .pet-friendly-menu button svg {
+      fill: #5813001a;
+    }
+  
+    .pet-friendly-menu .swiper-button-disabled {
+      opacity: 0.25;
+    }
+  
+    .pet-friendly-menu-content {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  
+    .pet-friendly-menu-content .pet-friendly-menu-item {
+      font-family: Oswald, sans-serif;
+      font-size: 32px;
+      line-height: 1em;
+      color: #2d2d2d;
+      font-weight: bold;
+      padding-bottom: 8px;
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+      transition: border-bottom-color 0.3s ease-in-out;
+    }
+  
+    .pet-friendly-menu-content .pet-friendly-menu-item:hover {
+      border-bottom-color: #2d2d2d;
+    }
+  
+    .pet-friendly-menu-content .pet-friendly-menu-item-active {
+      border-bottom-color: #2d2d2d;
+    }
+  
+    .pet-friendly-swiper {
+      height: 100%;
+      margin-left: 0;
+    }
+  
+    .pet-friendly-swiper .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  
+    .pet-friendly-swiper .swiper-slide p {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 300;
+      font-family: Roboto, sans-serif;
+      color: #2d2d2d;
+    }
+  
+    @media (max-width: 768px) {
+      .pet-friendly-carrousel-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      .pet-friendly-menu-content {
+        flex-direction: row;
+        gap: 16px;
+        justify-content: flex-start;
+      }
+  
+      .pet-friendly-menu {
+        padding-right: 16px;
+        border-right: none;
+        justify-content: flex-start;
+        height: fit-content;
+      }
+  
+      .pet-friendly-menu-content .pet-friendly-menu-item {
+        font-size: 16px;
+        line-height: 1em;
+      }
+  
+      .pet-friendly-menu button {
+        display: none;
+      }
+  
+      .pet-friendly-swiper .swiper-slide p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+  
+      .pet-friendly-swiper {
+        width: 100%;
+      }
+  
+      .pet-friendly-swiper .swiper-slide {
+        width: 100%;
+      }
+    }
+  </style>
+  
+  <div class="pet-friendly-carrousel-container">
+    <div class="pet-friendly-menu">
+      <button class="pet-friendly-menu-prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="#581300"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+          ></path>
+        </svg>
+      </button>
+  
+      <div class="pet-friendly-menu-content">
+        <span onclick="handleMenuClick(0)" class="pet-friendly-menu-item">Kit hospedagem pet</span>
+        <span onclick="handleMenuClick(1)" class="pet-friendly-menu-item">Pets e cuidados</span>
+      </div>
+  
+      <button class="pet-friendly-menu-next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="#581300"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  
+    <div class="pet-friendly-swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p>Aqui tem muito carinho e cuidado em cada detalhe!</p>
+  
+          <p>
+            • Pote para armazenar ração, cobertor e toalha; <br />
+            • Banheirinha para banho e saquinhos de higiene; <br />
+            • Biscoitos deliciosos e frutas frescas.
+          </p>
+        </div>
+  
+        <div class="swiper-slide">
+          <p>
+            Todos os incríveis detalhes de decoração, que você pode apreciar durante sua estadia, são
+            <strong>itens únicos e de valor inestimável</strong>. Sendo assim,
+            <strong>pedimos uma atenção especial, carinho e cuidado com o que oferecemos</strong> em
+            nossa pousada pet friendly.
+          </p>
+  
+          <p>
+            • Taxa única cobrada por animal R$250,00; <br />
+            • Máximo 2 (dois) animaizinhos por suíte; <br />
+            • Obrigatório o uso de guia apropriada nas áreas comuns.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    const petFriendlyTabsContentSwiper = new Swiper(".pet-friendly-swiper", {
+      slidesPerView: 1,
+      direction: "horizontal",
+      navigation: {
+        nextEl: ".pet-friendly-menu-next",
+        prevEl: ".pet-friendly-menu-prev",
+      },
+      breakpoints: {
+        768: {
+          direction: "vertical",
+        },
+      },
+    });
+  
+    function handleMenuClick(selectedIndex, slideTo = true) {
+      const menuItems = document.querySelectorAll(".pet-friendly-menu-item");
+  
+      menuItems.forEach((item, index) => {
+        if (index === selectedIndex) {
+          item.classList.add("pet-friendly-menu-item-active");
+        } else {
+          item.classList.remove("pet-friendly-menu-item-active");
+        }
+      });
+  
+      if (slideTo) petFriendlyTabsContentSwiper.slideTo(selectedIndex);
+    }
+  
+    handleMenuClick(0);
+  
+    petFriendlyTabsContentSwiper.on("slideChange", (swiper) => {
+      handleMenuClick(swiper.activeIndex, false);
+    });
+  </script>
