@@ -1,0 +1,128 @@
+<style>
+    .treinamento-carrossel{
+        width: 100%;
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #F7F5E8;
+        height: 300px;
+        
+    }
+
+    .content-treinamento{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .treinamento-carrossel .title-treinamento h3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+
+    .treinamento-carrossel .descricao-treinamento p{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0px 10px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 1.5rem;
+        margin: auto;
+    }
+
+    .treinamento-carrossel .swiper-pagination-bullet{
+        background-color: #AE5538;
+    }
+
+</style>
+
+<div class="treinamento-carrossel swiper">
+    <div class="swiper-wrapper">
+        <div class="content-treinamento swiper-slide">
+            <div class="title-treinamento">
+                <h3>
+                    Treinamento Empresarial
+                </h3>
+            </div>
+
+            <div class="descricao-treinamento">
+                <p>
+                    O mercado consumidor muda a uma velocidade acelerada, 
+                    já sentiu isso na pele? O mundo digital facilitou muito a nossa vida, 
+                    mas também criou desafios constantes para quem quer fidelizar o consumidor.
+                </p>
+                <p> 
+                    O treinamento empresarial para setores estratégicos ou focados na 
+                    experiência do cliente permite construir uma relação duradoura, fidelização 
+                    e, como consequência, o aumento do faturamento.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-treinamento swiper-slide">
+            <div class="title-treinamento">
+                <h3>
+                    Jornada do Cliente
+                </h3>
+            </div>
+
+            <div class="descricao-treinamento">
+                <p>
+                    Esse treinamento para empresas é focado no mapeamento do 
+                    percurso que seu consumidor faz desde o primeiro contato até o 
+                    pós-venda. O objetivo é identificar quais mudanças precisam ser 
+                    implementadas e como solidificar os pontos fortes que sua empresa já tem.
+                </p>
+                <p>
+                    A visibilidade estratégica proporcionada após a capacitação servirá como 
+                    guia para você e sua equipe focarem nas ações necessárias e não se perderem 
+                    com as demandas diárias.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-treinamento swiper-slide">
+            <div class="title-treinamento">
+                <h3>
+                    Whatsapp Business
+                </h3>
+            </div>
+
+            <div class="descricao-treinamento">
+                <p>
+                    O treinamento in company sobre Whatsapp Business/Empresarial é voltado 
+                    para toda a equipe, com conteúdo prático e objetivo. Invista na construção 
+                    de um sistema que tenha o cliente no centro da operação, a fim de ganhar 
+                    agilidade, organização e fidelização do seu público. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+<script>
+
+    new Swiper(".treinamento-carrossel", {
+        spaceBetween: 22,
+        slidePerView: "auto",
+        pagination:{
+            el: '.swiper-pagination',
+        }
+    });
+
+</script>
