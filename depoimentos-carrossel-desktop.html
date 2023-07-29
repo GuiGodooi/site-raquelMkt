@@ -1,0 +1,156 @@
+<style>
+    .carrossel-depoimentos{
+        width: 100%;
+        font-family: 'Open Sans',sans-serif;
+        display: flex;
+        height: 350px;
+        
+    }
+
+    .depoimentos-desktop{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .carrossel-depoimentos .texto-lateral{
+        position: absolute;
+        top: 140px;
+        left: -100px;
+        transform: rotate(-90deg);
+        font-size: 40px;
+        color: #AF55381A;
+    }
+
+    .carrossel-depoimentos .conteudo-depoimentos{
+        height: 300px;
+        display: flex;
+        overflow: hidden;
+        
+    }
+
+    .carrossel-depoimentos .conteudo-de-texto{
+        width: 100%;
+        margin: 50px 20px 0px 100px;
+    }
+
+    .carrossel-depoimentos .nome{
+        display: flex;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .carrossel-depoimentos .texto{
+        font-size: 22px;
+        line-height: 2rem;
+        font-weight: 300;
+    }
+    
+    .carrossel-depoimentos .depoimentos-desktop .foto img{
+        height: 400px;
+        
+    }
+    
+    .carrossel-depoimentos .depoimentos-desktop .foto2 img{
+        height: 400px;
+        opacity: 0.1;
+    }
+
+
+</style>
+
+<div class="carrossel-depoimentos swiper">
+<div class="swiper-wrapper">
+
+    <div class="depoimentos-desktop swiper-slide">
+        <div class="texto-lateral">
+            DEPOIMENTOS
+        </div>
+        <div class="conteudo-depoimentos">
+            <div class="conteudo-de-texto">
+            <div class="nome">
+                Diana<br>
+                Bibliotecária
+            </div>
+            <div class="texto">
+                O curso foi muito bom, não só trouxe entendimento sobre o assunto mas também como 
+                colocar em prática. Já usei o Whatsapp Empresarial, mas apenas para troca de 
+                mensagens. Não sabia das ferramentas que ele possui. Como consumidora me 
+                identifiquei muito. Prefiro mil vezes me comunicar com uma empresa por mensagem do 
+                que ligar.
+            </div>
+            </div>
+            <div class="foto">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Diana.jpeg" alt="">
+            </div>
+            <div class="foto2">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Debora.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="depoimentos-desktop swiper-slide">
+        <div class="texto-lateral">
+            DEPOIMENTOS
+        </div>
+        <div class="conteudo-depoimentos">
+            <div class="conteudo-de-texto">
+            <div class="nome">
+                Debora Caroline Doldan <br>
+                Proprietária da Clik House Luz
+            </div>
+            <div class="texto">
+                O curso foi nota mil. Facilita demais o dia a dia, acabamos produzindo mais. Juro que 
+                fiquei impressiona com a tecnologia do WhatsApp Empresarial.
+            </div>
+            </div>
+            <div class="foto">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Debora.jpeg" alt="">
+            </div>
+            <div class="foto2">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Alessandro-e1689963125521.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="depoimentos-desktop swiper-slide">
+        <div class="texto-lateral">
+            DEPOIMENTOS
+        </div>
+        <div class="conteudo-depoimentos">
+            <div class="conteudo-de-texto">
+            <div class="nome">
+                Alessandro Brito <br> 
+                Proprietário do restaurante japonês Hanada Barueri
+            </div>
+            <div class="texto">
+                O curso foi show de bola. Muito bom, ficou lindo. Me ajudou com formatação do textos 
+                para me comunicar melhor com meus clientes. 
+            </div>
+            </div>
+            <div class="foto">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Alessandro-e1689963125521.jpeg" alt="">
+            </div>
+            <div class="foto2">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Diana.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.carrossel-depoimentos', {
+        initialSlide: 0,
+    });
+</script>
