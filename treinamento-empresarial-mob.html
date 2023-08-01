@@ -1,26 +1,24 @@
 <style>
     .treinamento-carrossel{
+        height: 400px;
         width: 100%;
-        display: flex;
-        font-family: 'Open Sans', sans-serif;
-        background-color: #F7F5E8;
-        height: 300px;
-        
+        font-family: "Open Sans", sans-serif;
+        margin: 10px 0px 0px 0px;
     }
 
     .content-treinamento{
         width: 100%;
+        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
     .treinamento-carrossel .title-treinamento h3{
         width: 100%;
         display: flex;
         justify-content: center;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 2rem;
         font-weight: 600;
     }
@@ -31,13 +29,51 @@
         text-align: justify;
         padding: 0px 10px;
         font-weight: 300;
-        font-size: 13px;
+        font-size: 16px;
         line-height: 1.5rem;
-        margin: auto;
     }
 
-    .treinamento-carrossel .swiper-pagination-bullet{
-        background-color: #AE5538;
+    .treinamento-carrossel .swiper-button-next{
+        color: #AE5538;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 351px;
+        border: 1px solid #AE5538;
+        border-radius: 999px;
+        padding: 30px;
+        scale: 0.5;
+        right: 45px;
+        z-index: 99;
+    }
+
+    .treinamento-carrossel .swiper-button-prev{
+        color: #AE5538;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 351px;
+        border: 1px solid #AE5538;
+        border-radius: 999px;
+        padding: 30px;
+        scale: 0.5;
+        left: 45px;
+        z-index: 99;
+    }
+
+    .treinamento-carrossel .swiper-pagination{
+        position: absolute;
+        top: 350px !important;
+        scale: 1.5;
+        
+    }
+    
+    .treinamento-carrossel .swiper-pagination-bullet-active {
+        background-color: #AE5538 !important;
+    }
+
+    .treinamento-carrossel .swiper-pagination-bullet {
+        background-color: #AE5538 !important;
     }
 
 </style>
@@ -105,6 +141,8 @@
         </div>
     </div>
     <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
 
 <link
@@ -119,9 +157,14 @@
 
     new Swiper(".treinamento-carrossel", {
         spaceBetween: 22,
-        slidePerView: "auto",
+        slidePerView: 'auto',
+        
         pagination:{
             el: '.swiper-pagination',
+        },
+        navigation:{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         }
     });
 
