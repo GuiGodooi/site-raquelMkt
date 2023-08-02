@@ -3,7 +3,7 @@
         width: 100%;
         font-family: 'Open Sans',sans-serif;
         display: flex;
-        height: 350px;
+        height: 550px;
         
     }
 
@@ -17,15 +17,15 @@
 
     .carrossel-depoimentos .texto-lateral{
         position: absolute;
-        top: 140px;
-        left: -100px;
+        top: 250px;
+        left: -170px;
         transform: rotate(-90deg);
-        font-size: 40px;
+        font-size: 60px;
         color: #AF55381A;
     }
 
     .carrossel-depoimentos .conteudo-depoimentos{
-        height: 300px;
+        height: auto;
         display: flex;
         overflow: hidden;
         
@@ -33,30 +33,44 @@
 
     .carrossel-depoimentos .conteudo-de-texto{
         width: 100%;
-        margin: 50px 20px 0px 100px;
+        margin: 50px 60px 0px 120px;
     }
 
     .carrossel-depoimentos .nome{
         display: flex;
-        font-size: 32px;
-        font-weight: 600;
-        margin-bottom: 20px;
+        flex-direction: column;
+        margin-bottom: 10px;
     }
 
     .carrossel-depoimentos .texto{
         font-size: 22px;
         line-height: 2rem;
+        text-align: justify;
         font-weight: 300;
     }
     
     .carrossel-depoimentos .depoimentos-desktop .foto img{
-        height: 400px;
-        
+        height: 550px;
+        width: auto;
     }
     
     .carrossel-depoimentos .depoimentos-desktop .foto2 img{
-        height: 400px;
+        height: 550px;
+        width: auto;
         opacity: 0.1;
+    }
+    
+    .carrossel-depoimentos h3{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.5rem;
+    }
+    
+    .carrossel-depoimentos h4{
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 2rem;
+        margin-top: -5px;
     }
 
 
@@ -73,8 +87,12 @@
         <div class="conteudo-depoimentos">
             <div class="conteudo-de-texto">
             <div class="nome">
-                Diana<br>
-                Bibliotecária
+                <h3>
+                    Diana
+                </h3>
+                <h4>
+                    Bibliotecária
+                </h4>
             </div>
             <div class="texto">
                 O curso foi muito bom, não só trouxe entendimento sobre o assunto mas também como 
@@ -100,8 +118,12 @@
         <div class="conteudo-depoimentos">
             <div class="conteudo-de-texto">
             <div class="nome">
-                Debora Caroline Doldan <br>
-                Proprietária da Clik House Luz
+                <h3>
+                    Debora Caroline Doldan
+                </h3>
+                <h4>
+                    Proprietária da Clik House Luz
+                </h4>
             </div>
             <div class="texto">
                 O curso foi nota mil. Facilita demais o dia a dia, acabamos produzindo mais. Juro que 
@@ -124,8 +146,12 @@
         <div class="conteudo-depoimentos">
             <div class="conteudo-de-texto">
             <div class="nome">
-                Alessandro Brito <br> 
-                Proprietário do restaurante japonês Hanada Barueri
+                <h3>
+                    Alessandro Brito
+                </h3>
+                <h4>
+                    Proprietário do restaurante japonês Hanada Barueri
+                </h4>
             </div>
             <div class="texto">
                 O curso foi show de bola. Muito bom, ficou lindo. Me ajudou com formatação do textos 
@@ -153,5 +179,7 @@
 <script>
     new Swiper('.carrossel-depoimentos', {
         initialSlide: 0,
+        centeredSlide: true,
+        spaceBetween: 40,
     });
 </script>
