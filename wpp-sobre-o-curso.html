@@ -1,0 +1,143 @@
+<style>
+    .sobre-o-curso{
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-o-curso .title-about{
+        font-size: 26px;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+
+    .sobre-o-curso .description{
+        font-size: 22px;
+        line-height: 2rem;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    .sobre-o-curso .buttons{
+        display: flex;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .sobre-o-curso .btn-comprar{
+        padding: 12px 20px;
+        background-color: #AF5538;
+        text-decoration: none;
+        color: #FAFAFA;
+        border-radius: 5px;
+        font-size: 22px;
+        line-height: 1.5rem;
+        z-index: 99;
+    }
+
+    .sobre-o-curso .btn-next{
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        z-index: 99;
+    }
+
+    .sobre-o-curso .btn-prev{
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        z-index: 99;
+    }
+
+
+</style>
+
+<div class="sobre-o-curso swiper">
+    <div class="swiper-wrapper">
+        <div class="all-content swiper-slide">
+            <div class="title-about">
+                Com o curso você pode:
+            </div>
+
+            <div class="description">
+            <ul>
+                <li>ganhar agilidade no atendimento;</li>
+                <li>criar mensagens automáticas ainda mais personalizadas;</li>
+                <li>organizar a lista de contatos e leads;</li>
+                <li>divulgar um catálago de produtos e serviços;</li>
+                <li>realizar disparos em massa;</li>
+                <li>escalar suas vendas e atendimentos;</li>
+                <li>exibir um cartão de visitar personalizado;</li>
+                <li>aumento do faturamento.</li>
+            </ul>
+            </div>
+
+            <div class="buttons">
+                <a class="btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
+                <a class="btn-next" href="">Recurso do Business >></a>
+            </div>
+        </div>
+
+        <div class="all-content swiper-slide">
+            <div class="title-about">
+            <h3>
+                Recursos do WhatsApp Empresarial
+            </h3>
+            </div>
+
+            <div class="description">
+            <p>
+                No curso você aprenderá as noções básicas de segurança e o passo a passo 
+                para configurar seu WhatsApp Comercial tanto para Android quanto para iPhone (IOS).
+            </p>
+
+            <p>
+                Além disso, vai descobrir qual a melhor forma de apresentar o 
+                perfil da empresa para mostrar as informações mais importantes, 
+                como endereço, e-mail e site.
+            </p>
+
+            <p>
+                Com o WhatsApp Business você também pode avaliar diversos dados. 
+                Mas a informação só é válida se você souber como utilizá-la, não é 
+                mesmo? Por isso, o curso também ensina a ver as estatísticas de 
+                quantas mensagens foram enviadas, entregues e lidas com sucesso.
+            </p>
+            </div>
+            <div class="buttons">
+                <a class="btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
+                <a class="btn-prev" href="">Recurso do Business >></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+<script>
+    new Swiper('.sobre-o-curso',{
+        centeredSlide: true,
+        initialSlide: 0,
+        spaceBetween: 50,
+        navigation: {
+            nextEl: '.btn-next',
+            prevEl: '.btn-prev',
+        }
+    },);
+</script>
