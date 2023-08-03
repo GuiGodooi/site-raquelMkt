@@ -1,0 +1,151 @@
+<style>
+    .jornada-paciente-content{
+        width: 100%;
+        height: 600px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .jornada-paciente-content .jornada-descricao{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .jornada-paciente-content .title-jornada{
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    .jornada-paciente-content .texto-jornada{
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 2rem;
+        text-align: justify;
+    }
+
+    .jornada-paciente-content .buttons{
+        display: flex;
+        gap: 50px;
+    }
+
+    .buttons button{
+        border: none;
+        background-color: #AF5538;
+    }
+
+    .btn-prev{
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        z-index: 99;
+        line-height: 2rem;
+    }
+
+    .btn-next{
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        z-index: 99;
+        line-height: 2rem;
+    }
+
+    .btn-comprar{
+        padding: 14px 20px;
+        background-color: #AF5538;
+        text-decoration: none;
+        color: #F7F5E8;
+        border-radius: 5px;
+        font-size: 22px;
+        line-height: 1.5rem;
+        z-index: 99;
+        display: flex;
+        align-self: center;
+    }
+
+    .buttons{
+        width: 100%;
+        display: flex;
+        gap: 50px;
+    }
+
+
+</style>
+
+<div class="jornada-paciente-content swiper">
+    <div class="swiper-wrapper">
+        <div class="jornada-descricao swiper-slide">
+            <div class="title-jornada">
+                Jornada do Paciente
+            </div>
+            <div class="texto-jornada">
+                <p>
+                    A experiência de uma pessoa com um serviço de saúde pode ser 
+                    um momento delicado, portanto precisa de atenção especial.
+                </p>
+                <p>
+                    Entender as necessidades individuais e investir no aperfeiçoamento 
+                    da jornada do cliente traz conforto para o paciente e permite que os 
+                    profissionais de saúde ofereçam um atendimento mais especializado e humanizado.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <a class="btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
+                <a class="btn-next" href="">Mapeamento da Jornada <br>do Paciente >></a>
+            </div>
+        </div>
+
+        <div class="jornada-descricao swiper-slide">
+            <div class="title-jornada">
+                Mapeamento da Jornada do Paciente
+            </div>
+            <div class="texto-jornada">
+                <p>
+                    Com os avanços nas áreas de tecnologia, o atendimento digital do paciente também se tornou cada 
+                    vez mais presente e um ponto de atenção importante em todo o processo.
+                </p>
+                <p>
+                    Portanto, a integração entre o contato humano e o suporte digital deve ser bem elaborada. 
+                    Um bom exemplo é o uso do Whatsapp Business, que pode facilitar o aperfeiçoamento da 
+                    jornada do paciente no hospital ou em uma clínica, com lembretes de consulta, preparativos para 
+                    procedimentos, atualizações da agenda etc.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <a class="btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
+                <a class="btn-prev" href="">Jornada do Cliente >></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.jornada-paciente-content',{
+        initialSlide:0,
+        centeredSlide: true,
+        spaceBetween: 64,
+        navigation:{
+            nextEl:('.btn-next'),
+            prevEl:('.btn-prev'),
+        },
+    },);
+</script>
