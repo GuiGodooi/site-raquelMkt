@@ -1,7 +1,7 @@
 <style>
     .consultoria-carrossel{
         width: 100%;
-        height: auto;
+        height: 600px;
         font-family: 'Open Sans', sans-serif;
     }
 
@@ -140,7 +140,7 @@
 
             <div class="buttons">
                 <a class="btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">QUERO CONHECER A CONSULTORIA DE MARKETING DIGITAL</a>
-                <a class="btn-next" href="">Consultoria de Marketing Digital na Prática</a>
+                <a class="btn-prev" href="">Consultoria de Marketing Digital na Prática</a>
             </div>
         </div>
     </div>
@@ -158,5 +158,9 @@
         centeredSlide: true,
         initialSlide: 0,
         spaceBetween: 64,
+        navigation:{
+            nextEl:'.btn-next',
+            prevEl:'.btn-prev',
+        },
     },);
 </script>

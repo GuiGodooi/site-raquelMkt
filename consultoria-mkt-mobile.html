@@ -1,0 +1,166 @@
+<style>
+    .consultoria-carrossel-mobile{
+        width: 100%;
+        height: 600px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .consultoria-carrossel-mobile .swiper-slide{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .consultoria-carrossel-mobile .consultoria-textos{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .consultoria-carrossel-mobile .consultoria-textos h3{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .consultoria-carrossel-mobile .consultoria-textos p{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+    .consultoria-carrossel-mobile .consultoria-textos li{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5rem;
+    }
+
+    .consultoria-carrossel-mobile .consultoria-textos strong{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    .consultoria-carrossel-mobile .buttons{
+        width: 100%;
+        display: flex;
+        gap: 50px;
+    }
+
+    .consultoria-carrossel-mobile .btn-prev{
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        z-index: 99;
+    }
+
+    .consultoria-carrossel-mobile .btn-next{
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        z-index: 99;
+    }
+
+    .consultoria-carrossel-mobile .btn-comprar{
+        padding: 12px 20px;
+        background-color: #AF5538;
+        text-decoration: none;
+        color: #FAFAFA;
+        border-radius: 5px;
+        font-size: 22px;
+        line-height: 1.5rem;
+        z-index: 99;
+    }
+
+
+</style>
+
+<div class="consultoria-carrossel-mobile swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="consultoria-textos">
+                <h3>
+                    O que faz a consultoria de marketing digital na prática?
+                </h3>
+
+                <p>
+                    A consultora de marketing, com base na sua maturidade digital, se preocupa em fazer 
+                    uma análise detalhada, a fim de criar um projeto ou estratégia/metodologia voltada para 
+                    os meios tecnológicos e redes sociais, entre eles:
+                </p>
+
+                <ul>
+                    <li>levantamento dos objetivos de curto, médio e longo prazo da empresa</li>
+                    <li>diagnóstico de problemas no ambiente online do cliente;</li>
+                    <li>elaboração de um plano de ação.</li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <a class="btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">QUERO CONHECER A CONSULTORIA DE MARKETING DIGITAL</a>
+                <a class="btn-next" href="">Conhecendo o seu cliente</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="consultoria-textos">
+                <h3>
+                    Conhecendo o seu cliente
+                </h3>
+
+                <p>
+                    O objetivo principal de qualquer negócio é vender, nem sempre é um produto, pode ser um serviço ou uma ideia. 
+                </p>
+
+                <p>
+                    Contudo, vale a pena ressaltar que a relação com o cliente não começa na hora da venda e também não termina nesse momento.
+                </p>
+                
+                <strong>
+                    Logo, se não houver um bom relacionamento não há venda.
+                </strong>
+
+                <p>
+                    Quer entender como fidelizar o seu cliente? Então será preciso conhecer o caminho que ele percorre durante toda sua jornada, desde o primeiro contato com a sua marca até o momento em que ele se sente satisfeito pela aquisição.
+                </p>
+
+                <strong>Transforme seus clientes em advogados da sua marca <strong style="font-weight: 300;">(Philip Kotler)</strong></strong>
+            </div>
+
+            <div class="buttons">
+                <a class="btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">QUERO CONHECER A CONSULTORIA DE MARKETING DIGITAL</a>
+                <a class="btn-prev" href="">Consultoria de Marketing Digital na Prática</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.consultoria-carrossel', {
+        centeredSlide: true,
+        initialSlide: 0,
+        spaceBetween: 64,
+        navigation:{
+            nextEl:'.btn-next',
+            prevEl:'.btn-prev',
+        },
+    },);
+</script>
