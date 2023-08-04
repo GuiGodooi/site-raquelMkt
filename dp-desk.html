@@ -1,0 +1,270 @@
+<style>
+    .depoimentos-carrossel{
+        position: relative;
+        margin: 0px !important;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .depoimentos-carrossel .texto-lateral{
+        position: absolute;
+        padding: 0px;
+        margin: 0px;
+        left: -220px;
+        transform: rotate(-90deg);
+        top: 50%;
+        bottom: 50%;
+        font-size: 60px;
+        color: #AE55381A;
+    }
+
+    .depoimentos-carrossel .swiper-slide{
+        width: 100%;
+        display: flex;
+        margin-top: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .depoimentos-carrossel .swiper-slide h3{
+        font-size: 26px;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+    
+    .depoimentos-carrossel .swiper-slide h4{
+        font-size: 20px;
+        line-height: 1.5rem;
+        font-weight: 400;
+        margin: 0px;
+    }
+
+    .depoimentos-carrossel .swiper-slide p{
+        font-size: 22px;
+        line-height: 2rem;
+        font-weight: 300;
+        margin: 0px;
+        text-align: justify;
+    }
+
+    .depoimentos-carrossel .nome{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .depoimentos-carrossel .conteudo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 90px 0px 120px;
+    }
+
+    .depoimentos-carrossel .foto{
+        display: flex;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .depoimentos-carrossel img{
+        height: 600px;
+        width: 380px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .depoimentos-carrossel .depoimentos-footer {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        left: 320px;
+        bottom: 30px;
+        z-index: 999;
+
+    }
+
+    .depoimentos-carrossel .depoimentos-footer button {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 999px;
+        border: 3px solid #AF5538;
+
+        color: #AF5538;
+        fill: #AF5538;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        outline: none;
+        background: transparent;
+        padding: 0;
+    }
+
+    .depoimentos-carrossel .depoimentos-footer button svg {
+        fill: #AF5538;
+    }
+
+    .depoimentos-carrossel .depoimentos-footer .swiper-button-disabled {
+        opacity: 0.25;
+    }
+
+    .depoimentos-carrossel .depoimentos-pagination {
+        width: max-content;
+
+        --swiper-pagination-bullet-horizontal-gap: 16px;
+        --swiper-pagination-color: #AF5538;
+        --swiper-pagination-bullet-inactive-color: #AF5538;
+        --swiper-pagination-bullet-size: 12px;
+    }
+
+</style>
+
+<div class="depoimentos-carrossel swiper">
+
+    <div class="texto-lateral">DEPOIMENTOS</div>
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="conteudo">
+                <div class="nome">
+                    <h3>
+                        Diana
+                    </h3>
+                    <h4>
+                        Bibliotecária
+                    </h4>
+                </div>
+
+                <div class="texto">
+                    <p>
+                        O curso foi muito bom, não só trouxe entendimento sobre o assunto mas também como 
+                        colocar em prática. Já usei o Whatsapp Empresarial, mas apenas para troca de 
+                        mensagens. Não sabia das ferramentas que ele possui. Como consumidora me 
+                        identifiquei muito. Prefiro mil vezes me comunicar com uma empresa por mensagem do 
+                        que ligar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="foto">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Diana.jpeg" alt="Diana - Bibliotecária">
+            
+            
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Debora.jpeg" alt="Debora - Proprietária da Clik House Luz">
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="conteudo">
+                <div class="nome">
+                    <h3>
+                        Debora Caroline Doldan
+                    </h3>
+                    <h4>
+                        Proprietária da Clik House Luz
+                    </h4>
+                </div>
+
+                <div class="texto">
+                    <p>
+                        O curso foi nota mil. Facilita demais o dia a dia, acabamos produzindo mais. Juro que 
+                        fiquei impressiona com a tecnologia do WhatsApp Empresarial.
+                    </p>
+                </div>
+            </div>
+
+            <div class="foto">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Debora.jpeg" alt="Debora - Proprietária da Clik House Luz">
+            
+            
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Alessandro-e1689963125521.jpeg" alt="Alessandro - Proprietário do restaurante japonês Hanada Barueri">
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="conteudo">
+                <div class="nome">
+                    <h3>
+                        Alessandro Brito
+                    </h3>
+                    <h4>
+                        Proprietário do restaurante japonês Hanada Barueri
+                    </h4>
+                </div>
+
+                <div class="texto">
+                    <p>
+                        O curso foi show de bola. Muito bom, ficou lindo. Me ajudou com formatação do textos 
+                        para me comunicar melhor com meus clientes. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="foto">
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Alessandro-e1689963125521.jpeg" alt="Alessandro - Proprietário do restaurante japonês Hanada Barueri">
+            
+            
+                <img src="https://www.raquelantoniette.com/wp-content/uploads/2023/07/Diana.jpeg" alt="Diana - Bibliotecária">
+            </div>
+        </div>
+    </div>
+
+    <div class="depoimentos-footer">
+        <button class="depoimentos-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="#AF5538"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"
+            ></path>
+          </svg>
+        </button>
+    
+        <div class="depoimentos-pagination"></div>
+    
+        <button class="depoimentos-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="#AF5538"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.depoimentos-carrossel', {
+      initialSlide: 0,
+      centeredSlide: true,
+      pagination: {
+          el:'.depoimentos-pagination',
+      },
+      navigation:{
+          nextEl:'.depoimentos-next',
+          prevEl:'.depoimentos-prev',
+      },
+    },);
+</script>
