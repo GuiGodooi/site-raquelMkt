@@ -1,0 +1,133 @@
+<style>
+    .container-wpp{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .tabs{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    
+    .tab.active-tab{
+        font-weight: 600;
+        font-size: 14px
+    }
+    
+
+    .tab{
+      display: inline-block;
+
+      border-bottom: 1px solid transparent;
+      padding-bottom: 5px;
+    }
+
+    
+    .tab-content{
+      display: none;
+      padding: 0px 10px;
+    }
+    
+    .tab-content h2{
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+    
+     .tab-content p{
+         margin-top: 20px;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.5rem;
+        font-weight: 300
+    }
+    
+    .tab-content strong{
+        font-size: 14px;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .tab-content li{
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+    
+
+    .active-tab{
+      border-bottom: 1px solid #1F1F1F;
+    }
+   
+</style>
+
+<div class="container-wpp">
+<div class="tabs">
+    <div class="tab" onclick="openTab('tab1')">A Experiência do Cliente</div>
+    <div class="tab" onclick="openTab('tab2')">Encantando o Cliente</div>
+</div>
+
+<div class="tab-content" id="tab1">
+    
+    <p>
+        Vender um produto ou serviço começa muito antes da entrega e não se encerra nesse momento. A experiência do cliente está relacionada à percepção que ele tem da sua marca e ao nível de satisfação em cada etapa do processo.
+    </p>
+    
+    <p>
+        Colocar o cliente no centro da sua estratégia é a maior garantia de conseguir fidelizá-lo e construir um Customer Centric com excelência. Para isso, é preciso identificar quais pontos precisam ser melhorados na sua empresa.
+    </p>
+    
+    <p>
+        Com a jornada do cliente você tem ampla visibilidade de seus pontos fortes e fracos, e conseguirá aumentar o volume de vendas.
+    </p>
+    
+  </div>
+
+  <div class="tab-content" id="tab2">
+      
+    <h2>O cliente no centro das suas operações:</h2>
+    
+        <ul>
+            <li>Faça um planejamento estratégico;</li>
+            <li>Crie as suas personas;</li>
+            <li>Invista no pós-venda</li>
+            <li>Direcione seu tempo e recursos para fidelizar o cliente</li>
+            <li>Aprenda os principais conceitos de Customer Experience 
+</li>
+        </ul>
+    <p>
+        Mapear a jornada do cliente de forma prática e objetiva pode ser um divisor de águas para o seu negócio. Ao longo da minha carreira tenho ajudado empresas prestando consultoria ou treinando uma equipe própria focada em construir um CX sólido.
+    </p>
+    
+</div>
+</div>
+
+<script>
+
+
+    function openTab(tabId) {
+
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(content => content.style.display = 'none');
+
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => tab.classList.remove('active-tab'));
+
+      const selectedTabContent = document.getElementById(tabId);
+      selectedTabContent.style.display = 'block';
+
+      const selectedTab = document.querySelector(`[onclick="openTab('${tabId}')"]`);
+      selectedTab.classList.add('active-tab');
+    }
+
+
+    openTab('tab1');
+</script>
