@@ -1,0 +1,191 @@
+<style>
+    .jornada-mapeamento{
+        width: 100%;
+        height: auto;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .jornada-mapeamento .jm-slides{
+        width: 100%;
+        height: 450px;
+        display: flex;
+    }
+
+    .jornada-mapeamento .jm-slides .jm-left{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        gap: 40px;
+        
+    }
+
+    .jornada-mapeamento .jm-slides .jm-title{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .jornada-mapeamento .jm-slides hr{
+        width: 50%;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .jornada-mapeamento .jm-slides .jm-left .jm-background{
+        background-image: url('https://www.raquelantoniette.com/wp-content/uploads/2023/08/jornada-do-paciente.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        margin-bottom: 40px;
+    }
+
+    .jornada-mapeamento .jm-slides .jm-right{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .jornada-mapeamento .jm-slides .jm-right p{
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+
+    .jornada-mapeamento .jm-slides .jm-right .jm-buttons{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .jornada-mapeamento .jm-slides .jm-right .jm-buttons .jm-btn-comprar{
+        font-size: 20px;
+        background-color: #AE5538;
+        border-radius: 10px;
+        padding: 10px 30px;
+        text-align: center;
+        color: #FAFAFA;
+        font-weight: 400;
+        line-height: 1.5rem;
+        z-index: 99;
+    }
+
+    .jornada-mapeamento .jm-slides .jm-right .jm-buttons .jm-btn-next{
+        font-size: 20px;
+        line-height: 2rem;
+        font-weight: 400;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        z-index: 99;
+    }
+
+    .jornada-mapeamento .jm-slides .jm-right .jm-buttons .jm-btn-prev{
+        font-size: 20px;
+        line-height: 2rem;
+        font-weight: 400;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        z-index: 99;
+    }
+
+
+
+
+
+</style>
+
+<div class="jornada-mapeamento swiper">
+    <div class="swiper-wrapper">
+
+        <div class="jm-slides swiper-slide">
+            <div class="jm-left">
+                <div class="jm-title">
+                    Jornada do Paciente
+                </div>
+                <hr>
+                <div class="jm-background"></div>
+            </div>
+
+            <div class="jm-right">
+                <div class="jm-text">
+                    <p>
+                        A experiência de uma pessoa com um serviço de 
+                        saúde pode ser um momento delicado, portanto precisa 
+                        de atenção especial. 
+                    </p>
+
+                    <p>
+                        Entender as necessidades individuais e investir no aperfeiçoamento 
+                        da jornada do cliente traz conforto para o paciente e permite que os 
+                        profissionais de saúde ofereçam um atendimento mais especializado e 
+                        humanizado.
+                    </p>
+                </div>
+
+                <div class="jm-buttons">
+                    <a class="jm-btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
+                    <a class="jm-btn-next">Mapeamento da Jornada do Paciente >></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="jm-slides swiper-slide">
+            <div class="jm-left">
+                <div class="jm-title">
+                    Jornada do Paciente
+                </div>
+                <hr>
+                <div class="jm-background"></div>
+            </div>
+
+            <div class="jm-right">
+                <div class="jm-text">
+                    <p>
+                        A experiência de uma pessoa com um serviço de 
+                        saúde pode ser um momento delicado, portanto precisa 
+                        de atenção especial. 
+                    </p>
+
+                    <p>
+                        Entender as necessidades individuais e investir no aperfeiçoamento 
+                        da jornada do cliente traz conforto para o paciente e permite que os 
+                        profissionais de saúde ofereçam um atendimento mais especializado e 
+                        humanizado.
+                    </p>
+                </div>
+
+                <div class="jm-buttons">
+                    <a class="jm-btn-comprar">COMPRE AQUI</a>
+                    <a class="jm-btn-prev">Jornada do Paciente >></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.jornada-mapeamento', {
+        initialSlide: 0,
+        centeredSlide: true,
+        spaceBetween: 64,
+        navigation:{
+            nextEl: '.jm-btn-next',
+            prevEl: '.jm-btn-prev',
+        }
+    },);
+</script>
