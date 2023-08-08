@@ -1,0 +1,139 @@
+<style>
+    .whatsapp-empresarial-mobile{
+        width: 100%;
+        height: auto;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .whatsapp-empresarial-mobile .wpp-all-content{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .whatsapp-empresarial-mobile .wpp-all-content .wpp-title-mobile{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    .whatsapp-empresarial-mobile .wpp-all-content .wpp-text-mobile{
+        width: 100%;
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5rem;
+    }
+
+    .whatsapp-empresarial-mobile .wpp-all-content .buttons-mobile{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center
+    }
+
+    .whatsapp-empresarial-mobile .buttons-mobile .btn-comprar-mobile{
+        background-color: #AF5538;
+        color: #FAFAFA;
+        padding: 10px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    .whatsapp-empresarial-mobile .buttons-mobile .btn-next-mobile{
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+    
+    .whatsapp-empresarial-mobile .buttons-mobile .btn-prev-mobile{
+        color: #1F1F1F;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 2rem;
+    }  
+
+</style>
+
+<div class="whatsapp-empresarial-mobile swiper">
+    <div class="swiper-wrapper">
+
+        <div class="wpp-all-content swiper-slide">
+            <div class="wpp-title-mobile">
+                WhatsApp Empresarial
+            </div>
+
+            <div class="wpp-text-mobile">
+                <p>
+                    O WhatsApp Business é um aplicativo perfeito para pequenas e médias empresas, pois facilita a interação com os clientes. Essa ferramenta permite automatizar, organizar e responder rapidamente às mensagens, de forma bastante prática. 
+                </p>
+
+                <p>
+                    Importante não só, mas principalmente para dar suporte às estratégias de e-commerce empresarial, o aplicativo tornou-se uma solução para agilizar as respostas no setor de vendas e atendimento.
+                </p>
+            </div>
+
+            <div class="buttons-mobile">
+                <a class="btn-comprar-mobile" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
+                <a class="btn-next-mobile">Vendas e WhatsApp >></a>
+            </div>
+        </div>
+
+        <div class="wpp-all-content swiper-slide">
+            <div class="wpp-title-mobile">
+                Vendas e WhatsApp
+            </div>
+
+            <div class="wpp-text-mobile">
+                <p>
+                    O consumidor atual é exigente e demanda bastante atenção, a rapidez com que você consegue entender e atender o cliente é um fator determinante para sua satisfação e fidelização. 
+                </p>
+
+                <p>
+                    Quando a jornada do cliente é bem mapeada e a empresa conta com uma ferramenta como o WhatsApp Empresarial consegue solidificar a marca e expandir o alcance da sua equipe de vendas, bem como trabalhar o pós-venda para que todo o processo torne-se um ciclo virtuoso.
+                </p>
+            </div>
+
+            <div class="buttons-mobile">
+                <a class="btn-comprar-mobile" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
+                <a class="btn-prev-mobile">WhatsApp Empresarial >></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.whatsapp-empresarial-mobile', {
+        initialSlide:0,
+        spaceBetween: 64,
+        centeredSlide: true,
+        autoHeight:true,
+        navigation:{
+            nextEl:'.btn-next-mobile',
+            prevEl:'.btn-prev-mobile',
+        },
+    },);
+</script>
