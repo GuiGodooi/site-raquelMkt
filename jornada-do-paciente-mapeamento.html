@@ -7,7 +7,7 @@
 
     .jornada-mapeamento .jm-slides{
         width: 100%;
-        height: 450px;
+        height: auto;
         display: flex;
     }
 
@@ -32,6 +32,7 @@
         display: flex;
         padding: 0px;
         margin: 0px;
+        color: #AF5538;
     }
 
     .jornada-mapeamento .jm-slides .jm-left .jm-background{
@@ -43,6 +44,7 @@
         height: 100px;
         position: absolute;
         margin-bottom: 40px;
+        opacity: 0.8;
     }
 
     .jornada-mapeamento .jm-slides .jm-right{
@@ -50,13 +52,19 @@
         height: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding-right: 120px;
+        gap: 20px;
+        margin-bottom: 20px;
         
     }
 
     .jornada-mapeamento .jm-slides .jm-right p{
         font-size: 26px;
         font-weight: 300;
-        line-height: 2rem;
+        line-height: 2.5rem;
+        text-align: justify;
+        
     }
 
     .jornada-mapeamento .jm-slides .jm-right .jm-buttons{
@@ -67,14 +75,15 @@
 
     .jornada-mapeamento .jm-slides .jm-right .jm-buttons .jm-btn-comprar{
         font-size: 20px;
-        background-color: #AE5538;
+        background-color: #AF5538;
         border-radius: 10px;
-        padding: 10px 30px;
+        padding: 16px 30px;
         text-align: center;
         color: #FAFAFA;
         font-weight: 400;
         line-height: 1.5rem;
         z-index: 99;
+        text-decoration: none;
     }
 
     .jornada-mapeamento .jm-slides .jm-right .jm-buttons .jm-btn-next{
@@ -84,6 +93,8 @@
         text-decoration: underline;
         text-underline-offset: 10px;
         z-index: 99;
+        cursor: pointer;
+        color: #1F1F1F;
     }
 
     .jornada-mapeamento .jm-slides .jm-right .jm-buttons .jm-btn-prev{
@@ -93,6 +104,8 @@
         text-decoration: underline;
         text-underline-offset: 10px;
         z-index: 99;
+        cursor: pointer;
+        color: #1F1F1F;
     }
 
 
@@ -131,7 +144,7 @@
 
                 <div class="jm-buttons">
                     <a class="jm-btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
-                    <a class="jm-btn-next">Mapeamento da Jornada do Paciente >></a>
+                    <a class="jm-btn-next">Mapeamento da Jornada <br>do Paciente >></a>
                 </div>
             </div>
         </div>
@@ -140,7 +153,7 @@
         <div class="jm-slides swiper-slide">
             <div class="jm-left">
                 <div class="jm-title">
-                    Jornada do Paciente
+                    Mapeamento da <br>Jornada do Paciente
                 </div>
                 <hr>
                 <div class="jm-background"></div>
@@ -149,21 +162,22 @@
             <div class="jm-right">
                 <div class="jm-text">
                     <p>
-                        A experiência de uma pessoa com um serviço de 
-                        saúde pode ser um momento delicado, portanto precisa 
-                        de atenção especial. 
+                        Com os avanços nas áreas de tecnologia, o atendimento digital do paciente 
+                        também se tornou cada vez mais presente e um ponto de atenção importante em 
+                        todo o processo. 
                     </p>
 
                     <p>
-                        Entender as necessidades individuais e investir no aperfeiçoamento 
-                        da jornada do cliente traz conforto para o paciente e permite que os 
-                        profissionais de saúde ofereçam um atendimento mais especializado e 
-                        humanizado.
+                        Portanto, a integração entre o contato humano e o suporte digital deve 
+                        ser bem elaborada. Um bom exemplo é o uso do Whatsapp Business, que 
+                        pode facilitar o aperfeiçoamento da jornada do paciente no hospital ou 
+                        em uma clínica, com lembretes de consulta, preparativos para procedimentos, 
+                        atualizações da agenda etc.
                     </p>
                 </div>
 
                 <div class="jm-buttons">
-                    <a class="jm-btn-comprar">COMPRE AQUI</a>
+                    <a class="jm-btn-comprar" href="https://payment.hotmart.com/next/B73584181D?checkoutMode=10&src=lp&bid=1690558928107">COMPRE AQUI</a>
                     <a class="jm-btn-prev">Jornada do Paciente >></a>
                 </div>
             </div>
@@ -183,6 +197,7 @@
         initialSlide: 0,
         centeredSlide: true,
         spaceBetween: 64,
+        autoHeight:true,
         navigation:{
             nextEl: '.jm-btn-next',
             prevEl: '.jm-btn-prev',
